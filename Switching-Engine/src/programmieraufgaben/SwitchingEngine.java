@@ -102,7 +102,10 @@ public class SwitchingEngine {
     }
 
     /**
-     * Hier wird die Switch-Tabelle aktualisieren, falls das Gerät schon in der Tabelle existiert, aktualisiert die Port Information, sonst direkt einen neuen Datensatz hinzufügen.
+     * Hier wird die Switch-Tabelle aktualisieren, falls das Gerät schon in der Tabelle existiert,
+     * wenn Portnummer verändert sich, aktualisiert die Port Information,
+     * wenn Portnummer und Adresse identisch sein, wird Switch-Tabelle sich nicht verändern
+     * sonst direkt einen neuen Datensatz hinzufügen.
      * @param inputPort
      * @param sourceAddress
      */
@@ -247,6 +250,9 @@ public class SwitchingEngine {
     }
 }
 
+/**
+ * Diese Klasse ist Tabelleelement creationTime ist die erzeugte Zeit
+ */
 class TableItem
 {
     private int address;
