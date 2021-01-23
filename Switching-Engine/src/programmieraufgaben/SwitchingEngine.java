@@ -117,7 +117,6 @@ public class SwitchingEngine {
         if (!isExis) {
             table.add(new TableItem(inputPort, sourceAddress));
         }
-
     }
 
     private void frame(int inputPort, int sourceAddress, int destinationAddress) {
@@ -152,7 +151,6 @@ public class SwitchingEngine {
                 System.out.println("Ausgabe auf Port " + destinationPort + ".");
             }
         }
-
     }
 
     private void table() {
